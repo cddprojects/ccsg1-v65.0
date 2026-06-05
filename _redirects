@@ -1,6 +1,6 @@
 # Send apex host to www (Netlify)
-https://hiredzone.com/*  https://www.hiredzone.com/:splat  301!
-http://hiredzone.com/*   https://www.hiredzone.com/:splat  301!
+https://jobify-links.com/*  https://www.jobify-links.com/:splat  301!
+http://jobify-links.com/*   https://www.jobify-links.com/:splat  301!
 
 # Legacy .html URLs → clean slugs
 /thank-you.html       /thank-you/       301
