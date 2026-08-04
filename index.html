@@ -884,6 +884,95 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     .role-card p { margin: 0; font-size: 0.9rem; color: var(--muted); }
 
+    /* Featured role card — AI Data Evaluation */
+    .role-card--featured {
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 45%, #0f766e 100%);
+      border-color: transparent;
+      position: relative;
+      overflow: hidden;
+      padding: 1.75rem 2rem 2rem;
+    }
+    .role-card--featured::after {
+      content: "";
+      position: absolute;
+      top: -70px;
+      right: -70px;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.04);
+      pointer-events: none;
+    }
+    .role-card--featured:hover {
+      transform: translateY(-3px);
+      border-color: transparent;
+      box-shadow: 0 22px 60px rgba(49, 46, 129, 0.42);
+    }
+    .role-card__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #fbbf24;
+      background: rgba(251, 191, 36, 0.15);
+      border: 1px solid rgba(251, 191, 36, 0.3);
+      padding: 0.28rem 0.72rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    .role-card__badge svg { flex-shrink: 0; }
+    .role-card--featured .role-card__row h3 {
+      font-size: 1.3rem;
+      color: #fff;
+      letter-spacing: -0.02em;
+    }
+    .role-card--featured .role-card__row .ico-wrap {
+      width: 50px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
+    }
+    .role-card--featured .role-card__row .ico-wrap svg { width: 26px; height: 26px; }
+    .role-card--featured > p {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.96rem;
+      max-width: 52rem;
+      margin-bottom: 0;
+    }
+    .role-card__highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.6rem;
+      list-style: none;
+      margin: 1rem 0 0;
+      padding: 0;
+    }
+    .role-card__highlights li {
+      font-size: 0.81rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.85);
+      display: flex;
+      align-items: center;
+      gap: 0.38rem;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 0.32rem 0.72rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+    }
+    .role-card__highlights li::before {
+      content: "✓";
+      color: #34d399;
+      font-weight: 800;
+      font-size: 0.72rem;
+      line-height: 1;
+    }
+
     /* Eligibility — full-width accordions aligned with section title */
     #eligibility .section-head {
       max-width: none;
@@ -1201,7 +1290,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <li>Profile-based</li>
             </ul>
             <p><strong>Align Nook</strong> is a platform where individuals in Singapore can submit their profile to be considered for remote or flexible roles that may be offered by third-party hiring companies.</p>
-            <p>Common role categories include customer support, administrative support, content support, e-commerce support, AI data evaluation, and other online-based work.</p>
+            <p>Common role categories include AI data evaluation, customer support, administrative support, content support, e-commerce support, and other online-based work.</p>
             <p>Role availability, responsibilities, pay structure, and hiring criteria vary depending on the hiring company and may not be available for every applicant.</p>
             <div class="hero-stats hero-stats--inline" role="group" aria-label="At a glance">
               <div class="hero-stat">
@@ -1257,7 +1346,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <article class="why-card">
             <div class="tag">c.</div>
             <h3>Remote-focused roles</h3>
-            <p>The platform focuses on online and flexible work categories such as support, admin, content, and e-commerce-related roles.</p>
+            <p>The platform focuses on online and flexible work categories such as AI data evaluation, customer support, admin, content, and other online-based roles.</p>
           </article>
         </div>
       </div>
@@ -1411,6 +1500,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <a class="btn" href="#apply-now">Start your remote application</a>
         </div>
         <div class="role-grid">
+          <article class="role-card role-card--featured">
+            <div class="role-card__badge">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              Featured Opportunity
+            </div>
+            <div class="role-card__row">
+              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z"/></svg></div>
+              <h3>AI Data Evaluation</h3>
+            </div>
+            <p>Reviewing AI-generated responses, checking them against task guidelines, and providing structured quality feedback.</p>
+            <ul class="role-card__highlights">
+              <li>No prior AI experience required</li>
+              <li>Task-based flexible work</li>
+              <li>Clear guidelines provided</li>
+            </ul>
+          </article>
           <article class="role-card">
             <div class="role-card__row">
               <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div>
@@ -1441,15 +1546,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </article>
           <article class="role-card">
             <div class="role-card__row">
-              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
-              <h3>AI Data Evaluation Assistant</h3>
-            </div>
-            <p>Reviewing AI-generated responses, checking them against task guidelines, and providing structured quality feedback.</p>
-          </article>
-          <article class="role-card">
-            <div class="role-card__row">
               <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
-              <h3>Virtual Assistant Roles</h3>
+              <h3>Virtual Assistant</h3>
             </div>
             <p>Scheduling, coordination, and general support tasks.</p>
           </article>
