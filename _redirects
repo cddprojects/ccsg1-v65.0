@@ -1,6 +1,6 @@
 # Send apex host to www (Netlify)
-https://alignnook.com/*  https://www.alignnook.com/:splat  301!
-http://alignnook.com/*   https://www.alignnook.com/:splat  301!
+https://optyscout.com/*  https://www.optyscout.com/:splat  301!
+http://optyscout.com/*   https://www.optyscout.com/:splat  301!
 
 # Legacy .html URLs → clean slugs
 /thank-you.html       /thank-you/       301

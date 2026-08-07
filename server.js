@@ -50,7 +50,7 @@ http.createServer((req, res) => {
   });
 }).listen(PORT, () => {
   console.log('');
-  console.log('  Align Nook Local Preview Server');
+  console.log('  Optyscout Local Preview Server');
   console.log('  --------------------------------');
   console.log(`  Open in browser: http://localhost:${PORT}`);
   console.log('');
