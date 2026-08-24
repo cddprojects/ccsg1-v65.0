@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hour Finder — Recruitment Services</title>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-MK26KZHQ');</script>
-<!-- End Google Tag Manager -->
-  <meta name="description" content="Hour Finder is a profile-submission platform for individuals in Singapore who wish to be considered for remote or flexible opportunities offered by third-party hiring companies." />
-  <link rel="canonical" href="https://www.hourfinder.com/" />
+  <title>Scoutnect — Recruitment Services</title>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MK26KZHQ');</script>
+  <!-- End Google Tag Manager -->
+  <meta name="description"
+    content="Scoutnect is a profile-submission platform for individuals in Singapore who wish to be considered for remote or flexible opportunities offered by third-party hiring companies." />
+  <link rel="canonical" href="https://www.scoutnect.com/" />
   <link rel="icon" href="assets/favicon.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/favicon.png" />
   <style>
@@ -21,8 +26,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+    rel="stylesheet" />
   <style>
     :root {
       --ink: #0c1222;
@@ -44,8 +52,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       --font: "Plus Jakarta Sans", system-ui, sans-serif;
     }
 
-    *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: var(--font);
@@ -55,8 +71,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background: #fff;
     }
 
-    a { color: var(--brand-dark); text-underline-offset: 3px; }
-    a:hover { color: var(--brand); }
+    a {
+      color: var(--brand-dark);
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      color: var(--brand);
+    }
 
     .wrap {
       width: min(var(--max), calc(100% - 1.75rem));
@@ -71,6 +93,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       backdrop-filter: blur(14px) saturate(1.2);
       border-bottom: 1px solid var(--line);
     }
+
     .site-header .wrap.header-bar {
       display: flex;
       align-items: center;
@@ -79,6 +102,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       padding: 0.9rem 0;
       flex-wrap: nowrap;
     }
+
     .logo {
       font-weight: 800;
       font-size: 1.35rem;
@@ -90,6 +114,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       gap: 0.5rem;
       flex-shrink: 0;
     }
+
     .logo-icon {
       width: 32px;
       height: 32px;
@@ -107,12 +132,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       flex: 1;
       justify-content: center;
     }
+
     .header-actions {
       display: flex;
       align-items: center;
       gap: 0.5rem;
       flex-shrink: 0;
     }
+
     .nav-toggle {
       display: none;
       flex-direction: column;
@@ -128,7 +155,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       cursor: pointer;
       flex-shrink: 0;
     }
-    .nav-toggle:hover { border-color: rgba(234, 88, 12, 0.35); }
+
+    .nav-toggle:hover {
+      border-color: rgba(234, 88, 12, 0.35);
+    }
+
     .nav-toggle-bar {
       display: block;
       width: 20px;
@@ -137,34 +168,46 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background: var(--ink);
       transition: transform 0.2s ease, opacity 0.2s ease;
     }
+
     .nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) {
       transform: translateY(7px) rotate(45deg);
     }
-    .nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) { opacity: 0; }
+
+    .nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) {
+      opacity: 0;
+    }
+
     .nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(3) {
       transform: translateY(-7px) rotate(-45deg);
     }
+
     .nav a {
       font-size: 0.92rem;
       font-weight: 600;
       color: var(--muted);
       text-decoration: none;
     }
-    .nav a:hover { color: var(--ink); }
+
+    .nav a:hover {
+      color: var(--ink);
+    }
 
     @media (max-width: 880px) {
       .site-header .wrap.header-bar {
         flex-wrap: wrap;
       }
+
       .logo {
         order: 1;
         flex: 1 1 auto;
         min-width: 0;
       }
+
       .header-actions {
         order: 2;
         margin-left: auto;
       }
+
       .nav {
         order: 3;
         flex: 1 1 100%;
@@ -177,19 +220,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         pointer-events: none;
         transition: max-height 0.38s ease, opacity 0.22s ease, padding 0.22s ease;
       }
+
       .nav.is-open {
         max-height: 22rem;
         opacity: 1;
         pointer-events: auto;
         padding-top: 0.35rem;
       }
+
       .nav a {
         padding: 0.75rem 0;
         border-bottom: 1px solid var(--line);
         font-size: 1rem;
       }
-      .nav a:last-child { border-bottom: none; }
-      .nav-toggle { display: flex; }
+
+      .nav a:last-child {
+        border-bottom: none;
+      }
+
+      .nav-toggle {
+        display: flex;
+      }
+
       body.nav-open {
         overflow: hidden;
         touch-action: none;
@@ -212,32 +264,55 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       box-shadow: 0 4px 18px rgba(234, 88, 12, 0.32);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
     .btn:hover {
       transform: translateY(-2px);
       box-shadow: 0 8px 28px rgba(234, 88, 12, 0.38);
       color: #fff;
     }
-    .btn-row { margin-top: 1.25rem; }
+
+    .btn-row {
+      margin-top: 1.25rem;
+    }
 
     .section {
       padding: var(--section-y) 0;
       background: #fff;
       border-bottom: 1px solid var(--section-divider);
     }
-    .section--tight { padding: clamp(2.75rem, 5.5vw, 3.75rem) 0; }
-    .section--band { background: var(--band); }
+
+    .section--tight {
+      padding: clamp(2.75rem, 5.5vw, 3.75rem) 0;
+    }
+
+    .section--band {
+      background: var(--band);
+    }
+
     /* How it works / Get started / Eligibility — flat near-white grey */
     .section--soft {
       background: #f6f7f9;
     }
-    .section--surface { background: var(--surface); }
+
+    .section--surface {
+      background: var(--surface);
+    }
+
     .section--ink {
       background: linear-gradient(155deg, #1e1b4b 0%, #312e81 45%, #0f766e 100%);
       color: #e2e8f0;
       border-bottom-color: rgba(255, 255, 255, 0.06);
     }
-    .section--ink h2, .section--ink h3 { color: #fff; }
-    .section--ink p, .section--ink .muted { color: #cbd5e1; }
+
+    .section--ink h2,
+    .section--ink h3 {
+      color: #fff;
+    }
+
+    .section--ink p,
+    .section--ink .muted {
+      color: #cbd5e1;
+    }
 
     .eyebrow {
       font-size: 0.75rem;
@@ -247,12 +322,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: var(--eyebrow-color);
       margin: 0 0 0.55rem;
     }
-    .section-head .eyebrow { margin-bottom: 0.5rem; }
+
+    .section-head .eyebrow {
+      margin-bottom: 0.5rem;
+    }
 
     .section-head {
       max-width: 42rem;
       margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
     }
+
     .section-head h2 {
       font-size: clamp(1.65rem, 3.2vw, 2.1rem);
       font-weight: 800;
@@ -260,7 +339,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       line-height: 1.15;
       margin: 0 0 0.5rem;
     }
-    .section-head p:not(.eyebrow) { margin: 0; color: var(--muted); }
+
+    .section-head p:not(.eyebrow) {
+      margin: 0;
+      color: var(--muted);
+    }
 
     /* Hero — same vertical gradient as Compensation (“How pay works”) */
     .hero {
@@ -270,13 +353,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background: linear-gradient(180deg, #fff7ed 0%, #ffedd5 50%, #fff 100%);
       border-bottom: 1px solid var(--section-divider);
     }
-    .hero .wrap { position: relative; z-index: 1; }
+
+    .hero .wrap {
+      position: relative;
+      z-index: 1;
+    }
 
     .hero-grid {
       display: grid;
       gap: clamp(2rem, 5vw, 3rem);
       align-items: stretch;
     }
+
     @media (min-width: 980px) {
       .hero-grid {
         grid-template-columns: 1.08fr 400px;
@@ -291,6 +379,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       line-height: 1.12;
       margin: 0 0 1.1rem;
     }
+
     .hero h1 .hl {
       color: var(--brand);
       text-shadow: 0 0 40px rgba(234, 88, 12, 0.15);
@@ -305,6 +394,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       padding: 0;
       max-width: 38rem;
     }
+
     .hero-keywords li {
       font-size: 0.78rem;
       font-weight: 700;
@@ -324,6 +414,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       padding-top: 1.15rem;
       border-top: 1px solid rgba(234, 88, 12, 0.14);
     }
+
     .hero-stats--inline {
       display: flex;
       flex-wrap: wrap;
@@ -331,12 +422,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       gap: 0.35rem 0.85rem;
       row-gap: 0.65rem;
     }
+
     .hero-stat {
       display: inline-flex;
       align-items: baseline;
       gap: 0.35rem;
       white-space: nowrap;
     }
+
     @media (max-width: 640px) {
       .hero-stats--inline {
         flex-wrap: nowrap;
@@ -345,6 +438,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         gap: 0.25rem;
         max-width: none;
       }
+
       .hero-stat {
         flex: 1;
         flex-direction: column;
@@ -355,19 +449,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         min-width: 0;
         gap: 0.35rem;
       }
+
       .hero-stat__value {
         font-size: 1.2rem;
         line-height: 1.1;
       }
-      .hero-stat__value--static { font-size: 1.05rem; }
+
+      .hero-stat__value--static {
+        font-size: 1.05rem;
+      }
+
       .hero-stat__label {
         font-size: 0.68rem;
         font-weight: 600;
         line-height: 1.25;
         hyphens: auto;
       }
-      .hero-stat__sep { display: none; }
+
+      .hero-stat__sep {
+        display: none;
+      }
     }
+
     .hero-stat__value {
       font-size: 1.35rem;
       font-weight: 800;
@@ -376,16 +479,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       line-height: 1;
       color: var(--brand);
     }
+
     .hero-stat__value--static {
       font-size: 1.1rem;
       letter-spacing: -0.02em;
     }
+
     .hero-stat__label {
       font-size: 0.8rem;
       font-weight: 600;
       color: var(--muted);
       line-height: 1.2;
     }
+
     .hero-stat__sep {
       color: rgba(234, 88, 12, 0.35);
       font-weight: 300;
@@ -393,13 +499,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       line-height: 0;
       user-select: none;
     }
+
     .hero-copy p:not(.eyebrow) {
       margin: 0 0 0.85rem;
       color: var(--muted);
       max-width: 38rem;
       font-size: 1.05rem;
     }
-    .hero-copy p:last-of-type { margin-bottom: 0; }
+
+    .hero-copy p:last-of-type {
+      margin-bottom: 0;
+    }
 
     .form-shell {
       background: rgba(255, 255, 255, 0.78);
@@ -411,13 +521,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         0 0 0 1px rgba(234, 88, 12, 0.06),
         0 24px 60px rgba(15, 23, 42, 0.09);
     }
+
     .form-shell h2 {
       font-size: 1.28rem;
       font-weight: 800;
       margin: 0 0 0.35rem;
       letter-spacing: -0.02em;
     }
-    .form-shell > .sub {
+
+    .form-shell>.sub {
       font-size: 0.94rem;
       color: var(--muted);
       margin: 0 0 1.2rem;
@@ -430,6 +542,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       min-width: 0;
       overflow: visible;
     }
+
     .form-embed-wrapper iframe {
       display: block;
       width: 100%;
@@ -447,8 +560,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: var(--muted);
       margin-bottom: 0.35rem;
     }
-    .demo-form .row { margin-bottom: 0.85rem; }
-    .demo-form input, .demo-form select {
+
+    .demo-form .row {
+      margin-bottom: 0.85rem;
+    }
+
+    .demo-form input,
+    .demo-form select {
       width: 100%;
       padding: 0.65rem 0.8rem;
       border-radius: var(--radius-sm);
@@ -456,13 +574,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font: inherit;
       background: rgba(255, 255, 255, 0.95);
     }
+
     .demo-form .grid2 {
       display: grid;
       gap: 0.75rem;
     }
+
     @media (min-width: 420px) {
-      .demo-form .grid2 { grid-template-columns: 1fr 1fr; }
+      .demo-form .grid2 {
+        grid-template-columns: 1fr 1fr;
+      }
     }
+
     .demo-form .chk {
       display: flex;
       gap: 0.5rem;
@@ -471,7 +594,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: var(--muted);
       margin: 0.5rem 0 1rem;
     }
-    .demo-form .chk input { width: auto; margin-top: 0.2rem; }
+
+    .demo-form .chk input {
+      width: auto;
+      margin-top: 0.2rem;
+    }
+
     .demo-form button[type="button"],
     .demo-form a.demo-form-submit {
       width: 100%;
@@ -490,6 +618,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       text-align: center;
       text-decoration: none;
     }
+
     .form-note {
       margin-top: 0.65rem;
       font-size: 0.75rem;
@@ -502,9 +631,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       display: grid;
       gap: 1.1rem;
     }
+
     @media (min-width: 768px) {
-      .why-grid { grid-template-columns: repeat(3, 1fr); }
+      .why-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
+
     .why-card {
       background: var(--surface);
       border-radius: var(--radius);
@@ -513,6 +646,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       box-shadow: 0 8px 30px rgba(15, 23, 42, 0.04);
       position: relative;
     }
+
     .why-card::before {
       content: "";
       position: absolute;
@@ -523,22 +657,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background: linear-gradient(180deg, var(--brand), var(--brand-2));
       border-radius: 0 4px 4px 0;
     }
+
     .why-card .tag {
       font-size: 0.78rem;
       font-weight: 800;
       color: var(--eyebrow-color);
       margin-bottom: 0.35rem;
     }
+
     .why-card h3 {
       font-size: 1.08rem;
       font-weight: 800;
       margin: 0 0 0.45rem;
       letter-spacing: -0.02em;
     }
-    .why-card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+    .why-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
 
     /* Steps (eyebrow pattern shared site-wide) */
-    .steps-label { /* alias */
+    .steps-label {
+      /* alias */
       font-size: 0.75rem;
       font-weight: 800;
       letter-spacing: 0.14em;
@@ -546,16 +688,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: var(--eyebrow-color);
       margin: 0 0 0.55rem;
     }
+
     .steps-wrap {
       display: grid;
       gap: 1.5rem;
     }
+
     @media (min-width: 900px) {
       .steps-wrap {
         grid-template-columns: repeat(3, 1fr);
         gap: 1.25rem;
         position: relative;
       }
+
       .steps-wrap::before {
         content: "";
         position: absolute;
@@ -568,11 +713,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         opacity: 0.35;
       }
     }
+
     .step {
       text-align: center;
       padding: 0 0.35rem;
       position: relative;
     }
+
     .step-num {
       width: 3.25rem;
       height: 3.25rem;
@@ -590,12 +737,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       z-index: 1;
       box-shadow: 0 6px 20px rgba(234, 88, 12, 0.14);
     }
+
     .step h3 {
       font-size: 1.05rem;
       font-weight: 800;
       margin: 0 0 0.4rem;
     }
-    .step p { margin: 0; color: var(--muted); font-size: 0.92rem; }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
 
     /* Shared icon tile */
     .ico-wrap {
@@ -609,7 +762,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background: linear-gradient(145deg, var(--brand-soft), rgba(245, 158, 11, 0.12));
       color: var(--brand);
     }
-    .ico-wrap svg { width: 24px; height: 24px; display: block; }
+
+    .ico-wrap svg {
+      width: 24px;
+      height: 24px;
+      display: block;
+    }
 
     /* Confidence — centered intro + uniform accent cards */
     .conf-section {
@@ -617,6 +775,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       max-width: 40rem;
       margin: 0 auto clamp(2rem, 4vw, 2.75rem);
     }
+
     .conf-section h2 {
       font-size: clamp(1.55rem, 3.2vw, 2.05rem);
       font-weight: 800;
@@ -624,6 +783,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       letter-spacing: -0.03em;
       line-height: 1.15;
     }
+
     .conf-section .lead {
       margin: 0;
       font-size: 1.05rem;
@@ -637,8 +797,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       max-width: 880px;
       margin: 0 auto;
     }
+
     @media (min-width: 720px) {
-      .conf-bento { grid-template-columns: repeat(2, 1fr); }
+      .conf-bento {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     .conf-panel {
@@ -654,19 +817,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       box-shadow: 0 8px 28px rgba(15, 23, 42, 0.04);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
     .conf-panel:hover {
       transform: translateY(-2px);
       box-shadow: 0 14px 40px rgba(15, 23, 42, 0.07);
     }
+
     .conf-panel .ico-wrap {
       flex-shrink: 0;
     }
+
     .conf-panel h3 {
       font-size: 1rem;
       font-weight: 800;
       margin: 0 0 0.45rem;
       color: var(--ink);
     }
+
     .conf-panel p {
       margin: 0;
       font-size: 0.91rem;
@@ -679,26 +846,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background: linear-gradient(180deg, #fff7ed 0%, #ffedd5 50%, #fff 100%);
       color: var(--ink);
     }
-    .section--pay h2, .section--pay h3 { color: var(--ink); }
-    .section--pay p { color: var(--muted); }
+
+    .section--pay h2,
+    .section--pay h3 {
+      color: var(--ink);
+    }
+
+    .section--pay p {
+      color: var(--muted);
+    }
+
     .pay-lead {
       max-width: 40rem;
       margin-bottom: clamp(1.5rem, 3vw, 2rem);
     }
+
     .pay-lead h2 {
       font-size: clamp(1.65rem, 3vw, 2.05rem);
       font-weight: 800;
       margin: 0 0 0.65rem;
       letter-spacing: -0.03em;
     }
-    .pay-lead > p:not(.eyebrow) { margin: 0; font-size: 1.05rem; }
+
+    .pay-lead>p:not(.eyebrow) {
+      margin: 0;
+      font-size: 1.05rem;
+    }
+
     .pay-subgrid {
       display: grid;
       gap: 1.15rem;
     }
+
     @media (min-width: 720px) {
-      .pay-subgrid { grid-template-columns: repeat(3, 1fr); }
+      .pay-subgrid {
+        grid-template-columns: repeat(3, 1fr);
+      }
     }
+
     .pay-card {
       background: #fff;
       border: 1px solid var(--line);
@@ -709,12 +894,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       flex-direction: column;
       gap: 0.85rem;
     }
+
     .pay-card h3 {
       font-size: 0.98rem;
       font-weight: 800;
       margin: 0;
     }
-    .pay-card p { margin: 0; font-size: 0.88rem; line-height: 1.55; }
+
+    .pay-card p {
+      margin: 0;
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+
     .pay-disclaim {
       margin-top: 1.35rem;
       max-width: 42rem;
@@ -730,29 +922,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       margin-right: auto;
       max-width: 42rem;
     }
-    .section-head--center p { margin-left: auto; margin-right: auto; }
+
+    .section-head--center p {
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     /* Get started — stepped rail */
     .need-head {
       max-width: 38rem;
       margin-bottom: clamp(1.5rem, 3vw, 2rem);
     }
+
     .need-head--center {
       text-align: center;
       margin-left: auto;
       margin-right: auto;
     }
+
     .need-head h2 {
       font-size: clamp(1.35rem, 2.8vw, 1.85rem);
       font-weight: 800;
       letter-spacing: -0.03em;
       margin: 0 0 0.5rem;
     }
+
     .need-head p:not(.eyebrow) {
       margin: 0;
       color: var(--muted);
       font-size: 0.98rem;
     }
+
     .need-rail {
       display: grid;
       gap: 1.5rem;
@@ -760,12 +960,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       margin: 0 auto;
       position: relative;
     }
+
     @media (min-width: 820px) {
       .need-rail {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         padding-top: 0.5rem;
       }
+
       .need-rail::before {
         content: "";
         position: absolute;
@@ -778,10 +980,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         border-radius: 2px;
       }
     }
+
     .need-step {
       text-align: center;
       position: relative;
     }
+
     .need-step__top {
       display: flex;
       flex-direction: column;
@@ -789,6 +993,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       gap: 0.65rem;
       margin-bottom: 0.85rem;
     }
+
     .need-step__num {
       width: 3.1rem;
       height: 3.1rem;
@@ -804,12 +1009,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       position: relative;
       z-index: 1;
     }
+
     .need-step h3 {
       font-size: 1rem;
       font-weight: 800;
       margin: 0 0 0.4rem;
     }
-    .need-step p { margin: 0; font-size: 0.9rem; color: var(--muted); line-height: 1.55; }
+
+    .need-step p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
 
     /* Roles — promo strip + icon headers */
     .roles-promo {
@@ -826,6 +1038,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       border: 1px solid rgba(234, 88, 12, 0.15);
       box-shadow: 0 4px 18px rgba(234, 88, 12, 0.08);
     }
+
     .roles-promo p {
       margin: 0;
       font-weight: 600;
@@ -834,11 +1047,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       line-height: 1.5;
       color: var(--muted);
     }
+
     .roles-promo .btn {
       background: linear-gradient(135deg, var(--brand) 0%, #fb923c 100%);
       color: #fff;
       box-shadow: 0 4px 18px rgba(234, 88, 12, 0.32);
     }
+
     .roles-promo .btn:hover {
       color: #fff;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
@@ -848,8 +1063,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       display: grid;
       gap: 1rem;
     }
-    @media (min-width: 640px) { .role-grid { grid-template-columns: repeat(2, 1fr); } }
-    @media (min-width: 1000px) { .role-grid { grid-template-columns: repeat(3, 1fr); } }
+
+    @media (min-width: 640px) {
+      .role-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1000px) {
+      .role-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
     .role-card {
       background: var(--surface);
       border-radius: var(--radius);
@@ -857,23 +1083,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       border: 1px solid var(--line);
       transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
     }
+
     .role-card:hover {
       transform: translateY(-3px);
       box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
       border-color: rgba(234, 88, 12, 0.2);
     }
+
     .role-card__row {
       display: flex;
       gap: 0.85rem;
       align-items: center;
       margin-bottom: 0.5rem;
     }
+
     .role-card__row .ico-wrap {
       width: 42px;
       height: 42px;
       border-radius: 12px;
     }
-    .role-card__row .ico-wrap svg { width: 22px; height: 22px; }
+
+    .role-card__row .ico-wrap svg {
+      width: 22px;
+      height: 22px;
+    }
+
     .role-card__row h3 {
       flex: 1;
       min-width: 0;
@@ -883,7 +1117,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: var(--brand-dark);
       line-height: 1.25;
     }
-    .role-card p { margin: 0; font-size: 0.9rem; color: var(--muted); }
+
+    .role-card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
 
     /* Featured role card — AI Data Evaluation */
     .role-card--featured {
@@ -894,6 +1133,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       overflow: hidden;
       padding: 1.75rem 2rem 2rem;
     }
+
     .role-card--featured::after {
       content: "";
       position: absolute;
@@ -905,11 +1145,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background: rgba(255, 255, 255, 0.04);
       pointer-events: none;
     }
+
     .role-card--featured:hover {
       transform: translateY(-3px);
       border-color: transparent;
       box-shadow: 0 22px 60px rgba(234, 88, 12, 0.5);
     }
+
     .role-card__badge {
       display: inline-flex;
       align-items: center;
@@ -925,12 +1167,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       border-radius: 999px;
       margin-bottom: 1rem;
     }
-    .role-card__badge svg { flex-shrink: 0; }
+
+    .role-card__badge svg {
+      flex-shrink: 0;
+    }
+
     .role-card--featured .role-card__row h3 {
       font-size: 1.3rem;
       color: #fff;
       letter-spacing: -0.02em;
     }
+
     .role-card--featured .role-card__row .ico-wrap {
       width: 50px;
       height: 50px;
@@ -939,13 +1186,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       border-radius: 16px;
       backdrop-filter: blur(8px);
     }
-    .role-card--featured .role-card__row .ico-wrap svg { width: 26px; height: 26px; }
-    .role-card--featured > p {
+
+    .role-card--featured .role-card__row .ico-wrap svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    .role-card--featured>p {
       color: rgba(255, 255, 255, 0.82);
       font-size: 0.96rem;
       max-width: 52rem;
       margin-bottom: 0;
     }
+
     .role-card__highlights {
       display: flex;
       flex-wrap: wrap;
@@ -954,6 +1207,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       margin: 1rem 0 0;
       padding: 0;
     }
+
     .role-card__highlights li {
       font-size: 0.81rem;
       font-weight: 600;
@@ -966,6 +1220,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       border-radius: 999px;
       border: 1px solid rgba(255, 255, 255, 0.14);
     }
+
     .role-card__highlights li::before {
       content: "✓";
       color: #34d399;
@@ -980,10 +1235,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       width: 100%;
       text-align: left;
     }
-    .acc-stack { width: 100%; max-width: none; margin: 0; }
+
+    .acc-stack {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+    }
+
     #eligibility details.acc-item:last-of-type {
       margin-bottom: 0;
     }
+
     details.acc-item {
       background: #fff;
       border: 1px solid var(--line);
@@ -992,6 +1254,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       overflow: hidden;
       box-shadow: 0 2px 12px rgba(15, 23, 42, 0.035);
     }
+
     details.acc-item summary {
       list-style: none;
       cursor: pointer;
@@ -1003,13 +1266,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       gap: 1rem;
       font-size: 0.98rem;
     }
-    details.acc-item summary::-webkit-details-marker { display: none; }
+
+    details.acc-item summary::-webkit-details-marker {
+      display: none;
+    }
+
     details.acc-item summary .sum-left {
       display: flex;
       align-items: center;
       gap: 0.75rem;
       min-width: 0;
     }
+
     details.acc-item summary .sum-ico {
       width: 2.25rem;
       height: 2.25rem;
@@ -1021,7 +1289,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: var(--brand);
       flex-shrink: 0;
     }
-    details.acc-item summary .sum-ico svg { width: 18px; height: 18px; }
+
+    details.acc-item summary .sum-ico svg {
+      width: 18px;
+      height: 18px;
+    }
+
     details.acc-item summary::after {
       content: "+";
       font-weight: 800;
@@ -1035,7 +1308,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       background: rgba(234, 88, 12, 0.1);
       flex-shrink: 0;
     }
-    details.acc-item[open] summary::after { content: "−"; }
+
+    details.acc-item[open] summary::after {
+      content: "−";
+    }
+
     details.acc-item .acc {
       padding: 0 1.15rem 1.15rem 3.85rem;
       font-size: 0.93rem;
@@ -1044,20 +1321,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       border-top: none;
       line-height: 1.55;
     }
+
     @media (max-width: 520px) {
-      details.acc-item .acc { padding-left: 1.15rem; }
+      details.acc-item .acc {
+        padding-left: 1.15rem;
+      }
     }
+
     .acc ul {
       margin: 0.35rem 0 0;
       padding-left: 1.15rem;
     }
-    .acc li { margin-bottom: 0.35rem; }
+
+    .acc li {
+      margin-bottom: 0.35rem;
+    }
 
     /* Floating CTA — anchored to footer top (half above light section, half on footer) */
     #eligibility.section {
       /* Match rhythm: section padding + same band as .section-head → content (after last accordion) + room for CTA overlap */
       padding-bottom: calc(var(--section-y) + clamp(1.75rem, 4vw, 2.5rem) + 2.5rem);
     }
+
     @media (max-width: 640px) {
       #eligibility.section {
         padding-bottom: calc(var(--section-y) + clamp(1.75rem, 4vw, 2.5rem) + 3rem);
@@ -1072,6 +1357,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       /* Top padding clears floating CTA above logo / columns */
       padding: clamp(5.25rem, 10vw, 7rem) 0 1.5rem;
     }
+
     @media (max-width: 640px) {
       footer {
         padding-top: clamp(8.5rem, 26vw, 11.5rem);
@@ -1087,12 +1373,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       z-index: 20;
       pointer-events: none;
     }
+
     .cta-slab__inner {
       pointer-events: auto;
       display: flex;
       justify-content: center;
       padding-inline: 0.875rem;
     }
+
     .cta-float {
       position: relative;
       width: 100%;
@@ -1112,6 +1400,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         0 20px 48px rgba(15, 23, 42, 0.11),
         0 0 0 1px rgba(255, 255, 255, 0.75);
     }
+
     .cta-float__copy h2 {
       font-size: clamp(1.12rem, 2.35vw, 1.42rem);
       font-weight: 800;
@@ -1119,10 +1408,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       margin: 0 0 0.35rem;
       color: var(--ink);
     }
+
     .cta-float__copy {
       flex: 1 1 auto;
       min-width: 0;
     }
+
     .cta-float__copy p {
       margin: 0;
       font-size: 0.93rem;
@@ -1130,11 +1421,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       max-width: 48rem;
       color: var(--muted);
     }
+
     .cta-float .btn {
       flex-shrink: 0;
       white-space: nowrap;
     }
+
     @media (max-width: 640px) {
+
       /* Full-bleed CTA bar on small screens */
       .cta-slab__inner.wrap {
         width: 100vw;
@@ -1144,6 +1438,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         padding-inline: clamp(0.65rem, 3.5vw, 0.9rem);
         box-sizing: border-box;
       }
+
       .cta-float {
         width: 100%;
         flex-direction: row;
@@ -1153,31 +1448,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         padding: 0.95rem clamp(0.75rem, 3vw, 1rem);
         border-radius: calc(var(--radius) + 6px);
       }
+
       .cta-float__copy h2 {
         margin-bottom: 0.2rem;
         font-size: clamp(0.98rem, 3.8vw, 1.15rem);
         line-height: 1.2;
       }
+
       .cta-float__copy p {
         font-size: 0.8rem;
         line-height: 1.45;
       }
+
       .cta-float .btn {
         padding: 0.55rem 0.85rem;
         font-size: 0.78rem;
       }
     }
+
     .foot-grid {
       display: grid;
       gap: 2rem;
       margin-bottom: 2rem;
     }
+
     @media (min-width: 900px) {
       .foot-grid {
         grid-template-columns: 1.35fr 1fr 1fr;
         gap: 2rem 3rem;
       }
     }
+
     .foot-brand-block .name {
       display: flex;
       align-items: center;
@@ -1188,17 +1489,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       margin: 0 0 0.65rem;
       letter-spacing: -0.03em;
     }
+
     .foot-brand-block .name .logo-icon {
       width: 28px;
       height: 28px;
       border-radius: 7px;
     }
+
     .foot-brand-block .blurb {
       margin: 0;
       line-height: 1.55;
       max-width: 28rem;
     }
-    .foot-col > h3 {
+
+    .foot-col>h3 {
       font-size: 0.72rem;
       font-weight: 800;
       text-transform: uppercase;
@@ -1206,10 +1510,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: #64748b;
       margin: 0 0 1rem;
     }
-    .foot-col ul { list-style: none; margin: 0; padding: 0; }
-    .foot-col li { margin-bottom: 0.5rem; }
-    .foot-col a { color: #e2e8f0; text-decoration: none; }
-    .foot-col a:hover { color: #fff; text-decoration: underline; }
+
+    .foot-col ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .foot-col li {
+      margin-bottom: 0.5rem;
+    }
+
+    .foot-col a {
+      color: #e2e8f0;
+      text-decoration: none;
+    }
+
+    .foot-col a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+
     .foot-address {
       margin-top: 1rem;
       font-size: 0.88rem;
@@ -1221,6 +1542,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       margin-top: 1.75rem;
       max-width: none;
     }
+
     .foot-disclaimer h3 {
       margin: 0 0 0.45rem;
       font-size: 0.72rem;
@@ -1229,6 +1551,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       letter-spacing: 0.1em;
       color: #64748b;
     }
+
     .foot-disclaimer p {
       margin: 0;
       font-size: 0.86rem;
@@ -1245,19 +1568,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       gap: 0.75rem;
       font-size: 0.82rem;
     }
-    .foot-bottom a { color: #94a3b8; }
+
+    .foot-bottom a {
+      color: #94a3b8;
+    }
   </style>
 </head>
+
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK26KZHQ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MK26KZHQ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <header class="site-header">
     <div class="wrap header-bar">
-      <a class="logo" href="https://www.hourfinder.com/">
+      <a class="logo" href="https://www.scoutnect.com/">
         <img class="logo-icon" src="assets/favicon.png" width="32" height="32" alt="" decoding="async" />
-        Hour Finder
+        Scoutnect
       </a>
       <nav class="nav" id="site-nav" aria-label="Primary">
         <a href="#about">About</a>
@@ -1281,17 +1608,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="wrap">
         <div class="hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Hour Finder · Singapore</p>
-            <h1 id="hero-title"><span class="hl">Flexible remote opportunities</span> for Singapore-based applicants</h1>
+            <p class="eyebrow">Scoutnect · Singapore</p>
+            <h1 id="hero-title"><span class="hl">Flexible remote opportunities</span> for Singapore-based applicants
+            </h1>
             <ul class="hero-keywords" aria-label="Focus areas">
               <li>Remote-first</li>
               <li>Flexible schedules</li>
               <li>Third-party hiring</li>
               <li>Profile-based</li>
             </ul>
-            <p><strong>Hour Finder</strong> is a platform where individuals in Singapore can submit their profile to be considered for remote or flexible roles that may be offered by third-party hiring companies.</p>
-            <p>Common role categories include AI data evaluation, customer support, administrative support, content support, e-commerce support, and other online-based work.</p>
-            <p>Role availability, responsibilities, pay structure, and hiring criteria vary depending on the hiring company and may not be available for every applicant.</p>
+            <p><strong>Scoutnect</strong> is a platform where individuals in Singapore can submit their profile to be
+              considered for remote or flexible roles that may be offered by third-party hiring companies.</p>
+            <p>Common role categories include AI data evaluation, customer support, administrative support, content
+              support, e-commerce support, and other online-based work.</p>
+            <p>Role availability, responsibilities, pay structure, and hiring criteria vary depending on the hiring
+              company and may not be available for every applicant.</p>
             <div class="hero-stats hero-stats--inline" role="group" aria-label="At a glance">
               <div class="hero-stat">
                 <span class="hero-stat__value" data-count="3">0</span>
@@ -1313,11 +1644,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="form-shell" id="apply-now">
             <p class="eyebrow">Your details</p>
             <h2>Get updates on relevant remote opportunities</h2>
-            <p class="sub">Submit your details so your profile can be considered when suitable opportunities become available.</p>
+            <p class="sub">Submit your details so your profile can be considered when suitable opportunities become
+              available.</p>
 
             <div id="form-embed-root">
               <div class="form-embed-wrapper">
-                <div data-cddform="cc-sg10-singapore10" data-origin="www.hourfinder.com"></div>
+                <div data-cddform="cc-sg10-singapore10" data-origin="www.scoutnect.com"></div>
                 <script src="https://staging.chatfromforms.com/form-embed.js?v=0.1" defer></script>
               </div>
             </div>
@@ -1330,13 +1662,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow">About</p>
-          <h2 id="why-title">Why use Hour Finder?</h2>
+          <h2 id="why-title">Why use Scoutnect?</h2>
         </div>
         <div class="why-grid">
           <article class="why-card">
             <div class="tag">a.</div>
             <h3>One profile for consideration</h3>
-            <p>Submit your information once and be considered for relevant opportunities shared through the platform when available.</p>
+            <p>Submit your information once and be considered for relevant opportunities shared through the platform
+              when available.</p>
           </article>
           <article class="why-card">
             <div class="tag">b.</div>
@@ -1346,7 +1679,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <article class="why-card">
             <div class="tag">c.</div>
             <h3>Remote-focused roles</h3>
-            <p>The platform focuses on online and flexible work categories such as AI data evaluation, customer support, admin, content, and other online-based roles.</p>
+            <p>The platform focuses on online and flexible work categories such as AI data evaluation, customer support,
+              admin, content, and other online-based roles.</p>
           </article>
         </div>
       </div>
@@ -1372,7 +1706,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="step">
             <div class="step-num">3</div>
             <h3>Contact from hiring company</h3>
-            <p>If a company finds your profile suitable, they may contact you directly regarding next steps such as screening, interviews, role details, and work arrangements.</p>
+            <p>If a company finds your profile suitable, they may contact you directly regarding next steps such as
+              screening, interviews, role details, and work arrangements.</p>
           </div>
         </div>
       </div>
@@ -1383,32 +1718,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="conf-section">
           <p class="eyebrow">Confidence</p>
           <h2 id="conf-title">Work with Confidence</h2>
-          <p class="lead">Apply with more clarity — clearer guidance, consistent presentation, and a path to ask general questions when you need them.</p>
+          <p class="lead">Apply with more clarity — clearer guidance, consistent presentation, and a path to ask general
+            questions when you need them.</p>
         </div>
         <div class="conf-bento">
           <article class="conf-panel">
-            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+              </svg></div>
             <div>
               <h3>General role guidance</h3>
-              <p>We share general information about common remote roles so you have a clearer understanding of typical tasks and expectations.</p>
+              <p>We share general information about common remote roles so you have a clearer understanding of typical
+                tasks and expectations.</p>
             </div>
           </article>
           <article class="conf-panel">
-            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></div>
+            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg></div>
             <div>
               <h3>Process transparency</h3>
               <p>Where possible, we aim to present information in a clear and consistent manner.</p>
             </div>
           </article>
           <article class="conf-panel">
-            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg></div>
             <div>
               <h3>Application awareness</h3>
-              <p>Applicants are encouraged to review all role details carefully and exercise discretion when sharing personal information.</p>
+              <p>Applicants are encouraged to review all role details carefully and exercise discretion when sharing
+                personal information.</p>
             </div>
           </article>
           <article class="conf-panel">
-            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+              </svg></div>
             <div>
               <h3>Support for general enquiries</h3>
               <p>You may contact support for general questions about how the platform works.</p>
@@ -1423,32 +1775,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="pay-lead">
           <p class="eyebrow">Compensation</p>
           <h2 id="pay-title">How pay works</h2>
-          <p>Most roles may be compensated based on hourly rates, per task, per shift, or per project, depending on the hiring company.</p>
+          <p>Most roles may be compensated based on hourly rates, per task, per shift, or per project, depending on the
+            hiring company.</p>
         </div>
         <div class="pay-subgrid">
           <div class="pay-card">
-            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
+            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="5" width="20" height="14" rx="2" />
+                <path d="M2 10h20" />
+              </svg></div>
             <div>
               <h3>When pay details are provided</h3>
-              <p>Specific pay rates, payment terms, and schedules are typically confirmed directly by the hiring company during their hiring process.</p>
+              <p>Specific pay rates, payment terms, and schedules are typically confirmed directly by the hiring company
+                during their hiring process.</p>
             </div>
           </div>
           <div class="pay-card">
-            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg></div>
+            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+              </svg></div>
             <div>
               <h3>Variable pay factors</h3>
               <p>Actual pay depends on the company, role scope, working hours, experience, and other criteria.</p>
             </div>
           </div>
           <div class="pay-card">
-            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+            <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                <line x1="12" y1="9" x2="12" y2="13" />
+                <line x1="12" y1="17" x2="12.01" y2="17" />
+              </svg></div>
             <div>
               <h3>Important note</h3>
               <p>Any pay examples or ranges shown are general in nature and may not apply to all opportunities.</p>
             </div>
           </div>
         </div>
-        <p class="pay-disclaim">Important: Hour Finder does not guarantee earnings or job placement.</p>
+        <p class="pay-disclaim">Important: Scoutnect does not guarantee earnings or job placement.</p>
       </div>
     </section>
 
@@ -1463,7 +1831,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="need-step">
             <div class="need-step__top">
               <div class="need-step__num">1</div>
-              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div>
+              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <path d="M8 21h8" />
+                  <path d="M12 17v4" />
+                </svg></div>
             </div>
             <h3>Device and internet access</h3>
             <p>A laptop or desktop, stable internet connection, and basic familiarity with online tools.</p>
@@ -1471,7 +1844,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="need-step">
             <div class="need-step__top">
               <div class="need-step__num">2</div>
-              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z"/></svg></div>
+              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z" />
+                </svg></div>
             </div>
             <h3>Basic skills</h3>
             <p>Clear communication, basic computer skills, attention to detail, and ability to follow instructions.</p>
@@ -1479,10 +1856,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="need-step">
             <div class="need-step__top">
               <div class="need-step__num">3</div>
-              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                  <polyline points="9 22 9 12 15 12 15 22" />
+                </svg></div>
             </div>
             <h3>Work environment</h3>
-            <p>A suitable environment for focused work. Some roles may require availability for calls or use of a headset.</p>
+            <p>A suitable environment for focused work. Some roles may require availability for calls or use of a
+              headset.</p>
           </div>
         </div>
       </div>
@@ -1493,7 +1875,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="section-head">
           <p class="eyebrow">Roles</p>
           <h2 id="roles-title">Types of remote roles commonly featured</h2>
-          <p>Hour Finder may include opportunities across different industries and experience levels. Examples include:</p>
+          <p>Scoutnect may include opportunities across different industries and experience levels. Examples include:
+          </p>
         </div>
         <div class="roles-promo">
           <p>Ready when you are — submit once and your profile can be considered when suitable roles open up.</p>
@@ -1502,14 +1885,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="role-grid">
           <article class="role-card role-card--featured">
             <div class="role-card__badge">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12" aria-hidden="true">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
               Featured Opportunity
             </div>
             <div class="role-card__row">
-              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z"/></svg></div>
+              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3Z" />
+                </svg></div>
               <h3>AI Data Evaluation</h3>
             </div>
-            <p>Reviewing AI-generated responses, checking them against task guidelines, and providing structured quality feedback.</p>
+            <p>Reviewing AI-generated responses, checking them against task guidelines, and providing structured quality
+              feedback.</p>
             <ul class="role-card__highlights">
               <li>No prior AI experience required</li>
               <li>Task-based flexible work</li>
@@ -1518,35 +1909,59 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </article>
           <article class="role-card">
             <div class="role-card__row">
-              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg></div>
+              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                  <path
+                    d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                </svg></div>
               <h3>Customer Support</h3>
             </div>
             <p>Handling chat or email enquiries and basic customer assistance.</p>
           </article>
           <article class="role-card">
             <div class="role-card__row">
-              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
+              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M3 9h18" />
+                  <path d="M9 21V9" />
+                </svg></div>
               <h3>Data Entry and Admin Support</h3>
             </div>
             <p>Updating records, working with spreadsheets, and general admin tasks.</p>
           </article>
           <article class="role-card">
             <div class="role-card__row">
-              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg></div>
+              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <circle cx="8.5" cy="8.5" r="1.5" />
+                  <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
+                </svg></div>
               <h3>Content and Social Media Support</h3>
             </div>
             <p>Uploading content, scheduling posts, and basic moderation.</p>
           </article>
           <article class="role-card">
             <div class="role-card__row">
-              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="9" cy="21" r="1" />
+                  <circle cx="20" cy="21" r="1" />
+                  <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                </svg></div>
               <h3>E-Commerce Support</h3>
             </div>
             <p>Managing product listings, order coordination, and inventory updates.</p>
           </article>
           <article class="role-card">
             <div class="role-card__row">
-              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div>
+              <div class="ico-wrap" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" />
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                </svg></div>
               <h3>Virtual Assistant</h3>
             </div>
             <p>Scheduling, coordination, and general support tasks.</p>
@@ -1560,30 +1975,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="section-head">
           <p class="eyebrow">Eligibility</p>
           <h2 id="check-title">Who can take part</h2>
-          <p>Before applying, please ensure you meet the general requirements below. Individual roles may have additional criteria set by hiring companies.</p>
+          <p>Before applying, please ensure you meet the general requirements below. Individual roles may have
+            additional criteria set by hiring companies.</p>
         </div>
         <div class="acc-stack">
-        <details class="acc-item">
-          <summary><span class="sum-left"><span class="sum-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span> Eligibility</span></summary>
-          <div class="acc">
-            <ul>
-              <li>Meet the minimum working age under Singapore regulations</li>
-              <li>Have the appropriate eligibility to work where required by the hiring company</li>
-            </ul>
-          </div>
-        </details>
-        <details class="acc-item">
-          <summary><span class="sum-left"><span class="sum-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span> Communication</span></summary>
-          <div class="acc">Able to communicate in the required language for the role. Comfortable using email, chat, or online tools.</div>
-        </details>
-        <details class="acc-item">
-          <summary><span class="sum-left"><span class="sum-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></span> Remote setup</span></summary>
-          <div class="acc">Access to a suitable device and stable internet connection. Able to complete tasks in a consistent environment.</div>
-        </details>
-        <details class="acc-item">
-          <summary><span class="sum-left"><span class="sum-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg></span> Accurate information</span></summary>
-          <div class="acc">Provide accurate contact and background details. Be prepared for standard verification steps if required.</div>
-        </details>
+          <details class="acc-item">
+            <summary><span class="sum-left"><span class="sum-ico" aria-hidden="true"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg></span> Eligibility</span></summary>
+            <div class="acc">
+              <ul>
+                <li>Meet the minimum working age under Singapore regulations</li>
+                <li>Have the appropriate eligibility to work where required by the hiring company</li>
+              </ul>
+            </div>
+          </details>
+          <details class="acc-item">
+            <summary><span class="sum-left"><span class="sum-ico" aria-hidden="true"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                  </svg></span> Communication</span></summary>
+            <div class="acc">Able to communicate in the required language for the role. Comfortable using email, chat,
+              or online tools.</div>
+          </details>
+          <details class="acc-item">
+            <summary><span class="sum-left"><span class="sum-ico" aria-hidden="true"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                    <path d="M8 21h8" />
+                    <path d="M12 17v4" />
+                  </svg></span> Remote setup</span></summary>
+            <div class="acc">Access to a suitable device and stable internet connection. Able to complete tasks in a
+              consistent environment.</div>
+          </details>
+          <details class="acc-item">
+            <summary><span class="sum-left"><span class="sum-ico" aria-hidden="true"><svg viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <path d="M14 2v6h6" />
+                    <path d="M16 13H8" />
+                    <path d="M16 17H8" />
+                    <path d="M10 9H8" />
+                  </svg></span> Accurate information</span></summary>
+            <div class="acc">Provide accurate contact and background details. Be prepared for standard verification
+              steps if required.</div>
+          </details>
         </div>
       </div>
     </section>
@@ -1595,7 +2035,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="cta-float">
           <div class="cta-float__copy">
             <h2 id="prefooter-cta-heading">Questions before you apply?</h2>
-            <p>For general questions about how the platform works, reach out anytime. Hour Finder can explain the process but does not control hiring decisions by third-party companies.</p>
+            <p>For general questions about how the platform works, reach out anytime. Scoutnect can explain the
+              process but does not control hiring decisions by third-party companies.</p>
           </div>
           <a class="btn" href="#apply-now">Get in touch</a>
         </div>
@@ -1606,9 +2047,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="foot-brand-block">
           <p class="name">
             <img class="logo-icon" src="assets/favicon.png" width="28" height="28" alt="" decoding="async" />
-            Hour Finder
+            Scoutnect
           </p>
-          <p class="blurb">Hour Finder is a profile-submission platform for individuals who wish to be considered for remote or flexible opportunities offered by third-party hiring companies.</p>
+          <p class="blurb">Scoutnect is a profile-submission platform for individuals who wish to be considered for
+            remote or flexible opportunities offered by third-party hiring companies.</p>
         </div>
         <div class="foot-col">
           <h3>Quick links</h3>
@@ -1624,18 +2066,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="foot-col">
           <h3>Support</h3>
           <ul>
-            <li><a href="mailto:support@hourfinder.com">support@hourfinder.com</a></li>
+            <li><a href="mailto:support@scoutnect.com">support@scoutnect.com</a></li>
           </ul>
-          <p class="foot-address"><strong style="color:#e2e8f0">Business Correspondence Address</strong><br />10 Raeburn Park, Singapore 088702</p>
+          <p class="foot-address"><strong style="color:#e2e8f0">Business Correspondence Address</strong><br />10 Raeburn
+            Park, Singapore 088702</p>
           <div class="foot-disclaimer">
             <h3>Disclaimer</h3>
-            <p>Hour Finder is generally not the employer and does not guarantee interviews, job placement, or earnings.</p>
+            <p>Scoutnect is generally not the employer and does not guarantee interviews, job placement, or earnings.
+            </p>
           </div>
         </div>
       </div>
 
       <div class="foot-bottom">
-        <span>© <span id="y"></span> Hour Finder. All Rights Reserved.</span>
+        <span>© <span id="y"></span> Scoutnect. All Rights Reserved.</span>
         <a href="#">Back to top ↑</a>
       </div>
     </div>
@@ -1739,4 +2183,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
   </script>
 </body>
+
 </html>
