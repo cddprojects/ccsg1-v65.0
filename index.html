@@ -548,6 +548,7 @@
       width: 100%;
       max-width: 100%;
       border: 0;
+      height: auto;
       overflow: hidden;
     }
 
@@ -1649,8 +1650,21 @@
 
             <div id="form-embed-root">
               <div class="form-embed-wrapper">
-                <div data-cddform="cc-sg10-singapore10" data-origin="www.scoutnect.com"></div>
+                <div id="form-embed" data-cddform="cc-sg10-singapore10" data-origin="www.scoutnect.com"></div>
+                <script>
+                  const formEmbed = document.getElementById("form-embed");
+                  if (formEmbed && /^(localhost|127\.0\.0\.1)$/.test(window.location.hostname)) {
+                    formEmbed.dataset.origin = window.location.host;
+                  }
+                </script>
                 <script src="https://staging.chatfromforms.com/form-embed.js?v=0.1" defer></script>
+                <script>
+                  window.setTimeout(function () {
+                    var iframe = document.querySelector(".form-embed-wrapper iframe");
+                    if (!iframe || iframe.style.height !== "auto" || iframe.offsetHeight > 150) return;
+                    iframe.style.height = "600px";
+                  }, 1200);
+                </script>
               </div>
             </div>
           </div>
@@ -2127,61 +2141,6 @@
   </script>
   <script src="assets/site-nav.js" defer></script>
   <script src="https://staging.chatfromforms.com/form-embed.js?v=0.1" defer></script>
-  <script>
-    const formEmbedWrapper = document.querySelector(".form-embed-wrapper");
-
-    if (formEmbedWrapper) {
-      const getFallbackHeight = () => window.innerWidth < 640 ? 860 : 680;
-
-      const parseHeight = value => {
-        const parsed = parseInt(value, 10);
-        return Number.isFinite(parsed) ? parsed : 0;
-      };
-
-      const resizeIframe = iframe => {
-        if (!iframe) return;
-
-        const fallbackHeight = getFallbackHeight();
-        const measuredHeight = Math.round(iframe.getBoundingClientRect().height);
-        const declaredHeight = Math.max(
-          parseHeight(iframe.style.height),
-          parseHeight(iframe.getAttribute("height")),
-          measuredHeight
-        );
-        const targetHeight =
-          declaredHeight >= Math.round(fallbackHeight * 0.7)
-            ? declaredHeight
-            : fallbackHeight;
-
-        iframe.style.display = "block";
-        iframe.style.width = "100%";
-        iframe.style.maxWidth = "100%";
-        iframe.style.border = "0";
-        iframe.style.overflow = "hidden";
-        iframe.style.height = `${targetHeight}px`;
-        iframe.style.minHeight = `${targetHeight}px`;
-        iframe.setAttribute("scrolling", "no");
-      };
-
-      const syncIframes = () => {
-        formEmbedWrapper.querySelectorAll("iframe").forEach(resizeIframe);
-      };
-
-      new MutationObserver(syncIframes).observe(formEmbedWrapper, {
-        attributes: true,
-        attributeFilter: ["style", "height"],
-        childList: true,
-        subtree: true
-      });
-
-      window.addEventListener("load", syncIframes);
-      window.addEventListener("resize", syncIframes);
-
-      window.setTimeout(syncIframes, 300);
-      window.setTimeout(syncIframes, 1000);
-      window.setTimeout(syncIframes, 2000);
-    }
-  </script>
 </body>
 
 </html>
