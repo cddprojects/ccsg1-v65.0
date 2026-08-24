@@ -1659,11 +1659,21 @@
                 </script>
                 <script src="https://staging.chatfromforms.com/form-embed.js?v=0.1" defer></script>
                 <script>
-                  window.setTimeout(function () {
+                  var formEmbedWrapper = document.querySelector(".form-embed-wrapper");
+                  var setFormFallbackHeight = function () {
                     var iframe = document.querySelector(".form-embed-wrapper iframe");
-                    if (!iframe || iframe.style.height !== "auto" || iframe.offsetHeight > 150) return;
-                    iframe.style.height = "600px";
-                  }, 1200);
+                    if (!iframe || iframe.style.height !== "auto") return;
+                    iframe.style.height = "860px";
+                  };
+                  if (formEmbedWrapper) {
+                    new MutationObserver(setFormFallbackHeight).observe(formEmbedWrapper, {
+                      attributes: true,
+                      attributeFilter: ["style"],
+                      childList: true,
+                      subtree: true
+                    });
+                    setFormFallbackHeight();
+                  }
                 </script>
               </div>
             </div>
