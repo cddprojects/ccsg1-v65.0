@@ -1657,23 +1657,22 @@
                     formEmbed.dataset.origin = window.location.host;
                   }
                 </script>
-                <script src="https://staging.chatfromforms.com/form-embed.js?v=0.1" defer></script>
-                <script>
-                  var formEmbedWrapper = document.querySelector(".form-embed-wrapper");
-                  var setFormFallbackHeight = function () {
-                    var iframe = document.querySelector(".form-embed-wrapper iframe");
-                    if (!iframe || iframe.style.height !== "auto") return;
-                    iframe.style.height = "700px";
-                  };
-                  if (formEmbedWrapper) {
-                    new MutationObserver(setFormFallbackHeight).observe(formEmbedWrapper, {
-                      attributes: true,
-                      attributeFilter: ["style"],
-                      childList: true,
-                      subtree: true
-                    });
-                    setFormFallbackHeight();
-                  }
+                <script src="https://www.chatfromforms.com/form-embed.js?v=0.1" defer></script>
+                var formEmbedWrapper = document.querySelector(".form-embed-wrapper");
+                var setFormFallbackHeight = function () {
+                var iframe = document.querySelector(".form-embed-wrapper iframe");
+                if (!iframe || iframe.style.height !== "auto") return;
+                iframe.style.height = "700px";
+                };
+                if (formEmbedWrapper) {
+                new MutationObserver(setFormFallbackHeight).observe(formEmbedWrapper, {
+                attributes: true,
+                attributeFilter: ["style"],
+                childList: true,
+                subtree: true
+                });
+                setFormFallbackHeight();
+                }
                 </script>
               </div>
             </div>
